@@ -12,6 +12,4 @@ function randImg() {
     var size = images.length
     var x = Math.floor(size * Math.random())
     document.getElementById('image').src = images[x];
-    /* Random quote function is called when a random image is loaded*/
-    randQuote();
 }
