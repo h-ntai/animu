@@ -6,36 +6,6 @@ var images = [
     "img/4.png",
     "img/5.png"];
 
-/* quotes have been defined into a javascript list */
-
-var quotes = [
-    "A man who doesn't think differently from his time and environment can't grow beyond his time and environment.    (M.K. Ataturk)",
-    "Be yourself; everyone else is already taken.  	 (Oscar Wilde)",
-    "Be the change that you wish to see in the world. (Mahatma Gandhi)",
-    "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.			(Albert Einstein)",
-    "Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present. 			(Bill Keane)",
-    "I have not failed. I've just found 10,000 ways that won't work.			(Thomas A. Edison)",
-    "I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world 		 (Albert Einstein)",
-    "Sometimes life hits you in the head with a brick. Don't lose faith. 		 (Steve Jobs)",
-    "Great things in business are never done by one person. They're done by a team of people.		(Steve Jobs)",
-    "If opportunity doesn't knock, build a door. (Milton Berle)",
-    "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.  (Jimmy Dean)",
-    "No act of kindness, no matter how small, is ever wasted. (Aesop)",
-    "There is nothing stronger in the world than gentleness. (Han Suyin)",
-    "Ideas shape the course of history. (John Maynard Keynes)"
-
-    ];
-
-/* RandomQuote function defined to call quotes.  */
-function randQuote(){
-	/* quote length defined into size variable*/
-	var size = quotes.length
-	/* with math random function, a random number assigned into x variable between zero and size length */
-	var x = Math.floor(size * Math.random())
-	/* random quote has been sent to the html tag with ID*/
-	document.getElementById('quotes').innerText=quotes[x];
-}
-
 /* RandomImage function defined to call images. Everything is same until calling randomQuote function inside of it.  */
 function randImg() {
     var size = images.length
@@ -44,8 +14,3 @@ function randImg() {
     /* Random quote function is called when a random image is loaded*/
     randQuote();
 }
-
-
-
-
-
