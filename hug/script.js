@@ -4,7 +4,8 @@ var images = [
     "img/2.png",
     "img/3.png",
     "img/4.png",
-    "img/5.png"];
+    "img/5.png",
+    "img/aqua.GIF"];
 
 /* RandomImage function defined to call images. Everything is same until calling randomQuote function inside of it.  */
 function randImg() {
